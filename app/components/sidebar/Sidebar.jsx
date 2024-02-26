@@ -2,10 +2,10 @@ import React from 'react'
 import { AiOutlineHome } from 'react-icons/ai';
 import { GrAnalytics } from "react-icons/gr";
 import { FaUserFriends } from "react-icons/fa";
-import { FiBarChart, FiShoppingCart } from "react-icons/fi";
+import { FiBarChart, FiBox, FiShoppingCart, FiTag } from "react-icons/fi";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { BiLock } from "react-icons/bi";
-import { BsBox, BsCalendar4Range } from "react-icons/bs";
+import { BsCalendar4Range } from "react-icons/bs";
 import { IoReceiptSharp } from "react-icons/io5";
 
 function Sidebar() {
@@ -53,7 +53,7 @@ function Sidebar() {
                     <div className='text-[#B7CEEB] text-[12px]'>Orders</div>
                 </div>
                 <div className="flex items-center gap-3 cursor-pointer hover:bg-[#1034A6] py-1 px-2 transition">
-                    
+                    <FiTag size={14} color='#4682B4'/>
                     <div className='text-[#B7CEEB] text-[12px]'>Products</div>
                 </div>
                 <div className="flex items-center gap-3 cursor-pointer hover:bg-[#1034A6] py-1 px-2 transition">
@@ -93,7 +93,7 @@ function Sidebar() {
                     <div className='text-[#B7CEEB] text-[12px]'>Charts</div>
                 </div>
                 <div className="flex items-center gap-3 cursor-pointer hover:bg-[#1034A6] py-1 px-2 transition">
-                    <BsBox size={14} color='#4682B4' />
+                    <FiBox size={14} color='#4682B4' />
                     <div className="flex items-center justify-between flex-1">
                         <div className='text-[#B7CEEB] text-[12px]'>UI Elements</div>
                     </div>
