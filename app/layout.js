@@ -21,16 +21,21 @@ export default function RootLayout({ children }) {
         >
           <div 
             className="
-              lg:w-[15%]
-              sm:w-[20%]
+              xl:w-[15%]
+              lg:w-[20%]
+              md:w-[25%]
             "
           >
             <Sidebar />
           </div>
           <div
-            className="flex-1"
+            className="flex-1 relative"
           >
-            <Navbar />
+            <div
+              className="sticky"
+            >
+              <Navbar />
+            </div>
             {children}
           </div>
         </div>
