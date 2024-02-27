@@ -38,9 +38,9 @@ export default function Home() {
         <div className="md:w-[57%]">
           <div className="flex flex-col gap-7">
             <div className="flex items-center justify-between">
-              <Card title='Total Profit' price='95,595' discount='3.55' sign='+'/>
-              <Card title='Total Expenses' price='12,789' discount='2.67' sign='+'/>
-              <Card title='Total profit' price='1,984' discount='9.89' sign='-'/>
+              <Card title='Total Profit' price='95,595' discount='3.55' sign='+'></Card>
+              <Card title='Total Expenses' price='12,789' discount='2.67' sign='+'></Card>
+              <Card title='Total profit' price='1,984' discount='9.89' sign='-'></Card>
             </div>
 
             {/* CHART */}
