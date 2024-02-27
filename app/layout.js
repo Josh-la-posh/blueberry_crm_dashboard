@@ -38,11 +38,11 @@ export default function RootLayout({ children }) {
             className="flex-1 relative xl:ml-[15%] lg:ml-[20%] sm:ml-[25%] ml-[15%]"
           >
             <div
-              className="sticky top-0"
+              className="sticky top-0 z-10"
             >
               <Navbar />
             </div>
-            <div className="h-full overflow-scroll">
+            <div className="">
             {children}
             </div>
           </div>
