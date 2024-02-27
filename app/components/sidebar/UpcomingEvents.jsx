@@ -1,3 +1,5 @@
+'use client';
+
 import { Events } from '@/app/data/Data'
 import React from 'react'
 import { FaCalendarAlt } from 'react-icons/fa'
