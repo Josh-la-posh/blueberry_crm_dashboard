@@ -66,9 +66,9 @@ export default function Home() {
                             src={data.img}
                           />
                         </div>
-                        <div className="xl:text-[16px] lg:text-[12px] md:text-[9px] text-[12px]">{data.name}</div>
+                        <div className="text-[#808080] xl:text-[16px] lg:text-[12px] md:text-[9px] text-[12px]">{data.name}</div>
                       </div>
-                      <div className="font-bold lg:text-[12px] md:text-[10px] text-[12px]">${data.price}</div>
+                      <div className="font-bold xl:text-[14px] lg:text-[10px] md:text-[10px] text-[12px]">${data.price}</div>
                     </div>                
                   )
                 })

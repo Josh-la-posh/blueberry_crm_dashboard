@@ -49,13 +49,13 @@ function ActiveUsers() {
      }
 
   return (
-    <div className="bg-white flex flex-col xl:gap-8 lg:gap-5 md:gap-3 gap-4 md:mb-2 mb-4 px-6 py-4">
+    <div className="bg-white flex flex-col xl:gap-8 lg:gap-5 md:gap-3 gap-4 md:mb-4 mb-4 lg:px-4 md:px-2 px-6 lg:py-6 md:py-2 py-4">
         <div className="">
-            <div className="flex items-center justify-between font-bold lg:text-[18px] md:text-[12px]">
+            <div className="flex items-center justify-between font-bold lg:text-[18px] md:text-[13px]">
                 <div>Active Users</div>
                 <div>200</div>
             </div>
-            <div className='text-[10px]'>Page views per day</div>
+            <div className='md:text-[8px] text-[10px]'>Page views per day</div>
         </div>
         <div>
             <ReactApexChart options={data.options} series={series} type='bar' />

@@ -30,8 +30,8 @@ function ProgressChart() {
         <ReactApexChart options={data.options} series={series} type='radialBar' />
       </div>
         <div className="flex-1">
-          <div className='font-bold xl:text-[24px] lg:text-[18px] md:text-[12px] text-[18px] text-white'>1,860 <span className='font-normal text-[#eee] xl:text-[14px] lg:text-[12px] md:text-[6px] text-[12px]'>/3k Target</span></div>
-          <div  className='text-[#eee]  xl:text-[14px] lg:text-[12px] md:text-[6px] text-[12px]'>Orders in period</div>
+          <div className='font-bold xl:text-[24px] lg:text-[16px] md:text-[12px] text-[18px] text-white'>1,860 <span className='font-normal text-[#eee] xl:text-[14px] lg:text-[8px] md:text-[6px] text-[12px]'>/3k Target</span></div>
+          <div  className='text-[#eee]  xl:text-[14px] lg:text-[8px] md:text-[6px] text-[12px]'>Orders in period</div>
         </div>
     </div>
   )

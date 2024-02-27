@@ -31,8 +31,8 @@ function PopularCategories() {
                     type='donut'
                 />
                 <div className="absolute top-0 right-0 left-0 bottom-0 flex flex-col items-center justify-center">
-                    <div className='font-bold lg:text-[24px] md:text-[14px] text-[18px]'>129,345</div>
-                    <div className='lg:text-[14px] md:text-[8px] text-[12px]'>Products Score</div>
+                    <div className='font-bold lg:text-[20px] md:text-[14px] text-[18px]'>129,345</div>
+                    <div className='text-[#808080] lg:text-[12px] md:text-[8px] text-[12px]'>Products Score</div>
                 </div>
 
             </div>
@@ -41,16 +41,16 @@ function PopularCategories() {
                 <div className="flex items-center justify-center md:gap-3 gap-5 flex-1">
                     <div className="flex items-center md:gap-1 gap-2">
                         <div className="h-[10px] w-[10px] rounded-[5px] bg-blue-400"></div>
-                        <div className='text-[12px] lg:text-[14px] md:text-[8px] '>Shoes</div>
+                        <div className='text-[#808080] lg:text-[14px] md:text-[8px] text-[12px]'>Shoes</div>
                     </div>
-                    <div className='font-semibold text-[14px] lg:text-[16px] md:text-[8px]'>$60k</div>
+                    <div className='font-semibold text-[14px] xl:text-[16px] lg:text-[14px] md:text-[8px]'>$60k</div>
                 </div>
                 <div className="flex items-center justify-center md:gap-3 gap-5 flex-1">
                     <div className="flex items-center md:gap-1 gap-2">
                         <div className="h-[10px] w-[10px] rounded-[5px] bg-green-400"></div>
-                        <div className='text-[12px] lg:text-[14px] md:text-[8px] '>Jacket</div>
+                        <div className='text-[#808080] lg:text-[14px] md:text-[8px] text-[12px]'>Jacket</div>
                     </div>
-                    <div className='font-semibold text-[14px] lg:text-[16px] md:text-[8px]'>$28k</div>
+                    <div className='font-semibold text-[14px] xl:text-[16px] lg:text-[14px] md:text-[8px]'>$28k</div>
                 </div>
             </div>
 
@@ -58,16 +58,16 @@ function PopularCategories() {
                 <div className="flex items-center justify-center md:gap-3 gap-5 flex-1">
                     <div className="flex items-center md:gap-1 gap-2">
                         <div className="h-[10px] w-[10px] rounded-[5px] bg-yellow-400"></div>
-                        <div className='text-[12px] lg:text-[14px] md:text-[8px] '>T-shirt</div>
+                        <div className='text-[14px] lg:text-[14px] md:text-[8px] '>T-shirt</div>
                     </div>
-                    <div className='font-semibold text-[14px] lg:text-[16px] md:text-[8px]'>$28k</div>
+                    <div className='font-semibold text-[14px] xl:text-[16px] lg:text-[14px] md:text-[8px]'>$28k</div>
                 </div>
                 <div className="flex items-center justify-center md:gap-3 gap-5 flex-1">
                     <div className="flex items-center md:gap-1 gap-2">
                         <div className="h-[10px] w-[10px] rounded-[5px] bg-rose-400"></div>
-                        <div className='lg:text-[14px] md:text-[8px] text-[12px]'>Other</div>
+                        <div className='text-[#808080] lg:text-[14px] md:text-[8px] text-[12px]'>Other</div>
                     </div>
-                    <div className='font-semibold lg:text-[16px] md:text-[8px] text-[14px]'>$13k</div>
+                    <div className='font-semibold xl:text-[16px] lg:text-[14px] md:text-[8px] text-[14px]'>$13k</div>
                 </div>
             </div>
         </div>
