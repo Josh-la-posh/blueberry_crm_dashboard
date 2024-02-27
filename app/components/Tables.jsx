@@ -1,6 +1,7 @@
 
 import React from 'react'
 import { RecentOrders } from '../data/Data'
+import Image from 'next/image'
 
 function Tables() {
   return (
@@ -19,9 +20,19 @@ function Tables() {
                     return (
                         <tbody>
                             <tr key={order.id} className=''>
-                                <td className='xl: text-[14px] md:text-[8px]  text-[12px] md:px-0 px-3 md:py-2 py-4'>{order.date}</td>
-                                <td className='xl: text-[14px] md:text-[8px]  text-[12px] md:px-1 px-3 py-4'>{order.name}</td>
-                                <td className='xl: text-[14px] md:text-[8px]  text-[12px] md:px-1 px-3 py-4'>
+                                <td className='xl:text-[14px] md:text-[8px]  text-[12px] md:px-0 px-3 md:py-2 py-4'>{order.date}</td>
+                                <td className='rounded-full h-[25px] xl:text-[14px] md:text-[8px]  text-[12px] md:px-1 px-3 py-4 flex items-center gap-2'>
+                                    <div className='flex items-center'>
+                                        <Image 
+                                            height={30}
+                                            width={30}
+                                            alt='user'
+                                            src={order.img}
+                                        />
+                                    </div>
+                                    <div>{order.name}</div>
+                                </td>
+                                <td className='xl:text-[14px] md:text-[8px]  text-[12px] md:px-1 px-3 py-4'>
                                     {order.status === 'Completed' && <div className='flex gap-1 items-center'>
                                         <div className='h-[4px] w-[4px] rounded-full bg-green-500'></div>
                                         <div className="text-green-500">
@@ -41,7 +52,7 @@ function Tables() {
                                         </div>
                                     </div>}
                                 </td>
-                                <td className='font-semibold xl: text-[14px] md:text-[8px] text-[12px] md:px-1 px-3 py-4'>${order.total}</td>
+                                <td className='font-semibold xl:text-[14px] md:text-[8px] text-[12px] md:px-1 px-3 py-4'>${order.total}</td>
                             </tr>
                         </tbody>
                     )

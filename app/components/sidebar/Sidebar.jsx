@@ -38,7 +38,7 @@ function Sidebar() {
                 <div className="text-white rounded-full bg-[#007FFF] md:px-3 px-2 md:text-[10px] text-[8px]">6</div>
             </div>
         </div>
-        <div className='mb-[30px] lg:px-6 md:px-4 px-3'>
+        <div className='mb-[30px] lg:px-6 md:px-4 px-2'>
             <div className='mb-[10px] text-[#4682B4] font-semibold sm:text-[12px] text-[8px]'>MANAGEMENT</div>
             <div className="flex flex-col gap-2">
                 <div className="flex items-center gap-3 cursor-pointer hover:bg-[#1034A6] py-1 px-2 transition"> 
@@ -68,7 +68,7 @@ function Sidebar() {
             </div>
         </div>
 
-        <div className='mb-[30px] lg:px-6 md:px-4 px-3'>
+        <div className='mb-[30px] lg:px-6 md:px-4 px-2'>
             <div className='mb-[10px] text-[#4682B4] font-semibold sm:text-[12px] text-[8px]'>PAGES</div>
             <div className="flex flex-col gap-2">
                 <div className="flex items-center gap-3 cursor-pointer hover:bg-[#1034A6] py-1 px-2 transition"> 
@@ -89,7 +89,7 @@ function Sidebar() {
             </div>
         </div>
 
-        <div className='mb-[30px] lg:px-6 md:px-4 px-3'>
+        <div className='mb-[30px] lg:px-6 md:px-4 px-2'>
         <div className='mb-[10px] text-[#4682B4] font-semibold sm:text-[12px] text-[8px]'>COMPONENTS</div>
             <div className="flex flex-col gap-2">
                 <div className="flex items-center gap-3 cursor-pointer hover:bg-[#1034A6] py-1 px-2 transition"> 

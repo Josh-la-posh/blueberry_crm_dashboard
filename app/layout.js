@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
             <Sidebar />
           </div>
           <div
-            className="flex-1 relative xl:ml-[15%] lg:ml-[20%] sm:ml-[25%] ml-[15%] overflow-x-hidden"
+            className="flex-1 relative xl:ml-[15%] lg:ml-[20%] sm:ml-[25%] ml-[15%]"
           >
             <div
               className="sticky top-0"

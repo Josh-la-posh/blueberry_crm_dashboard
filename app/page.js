@@ -1,4 +1,5 @@
 
+import Image from "next/image";
 import ActiveUsers from "./components/ActiveUsers";
 import Card from "./components/Card";
 import LineChart from "./components/Chart";
@@ -33,7 +34,7 @@ export default function Home() {
 
       {/* CARD */}
 
-      <div className="md:flex justify-between gap-4 mb-5">
+      <div className="md:flex justify-between gap-4 mb-7">
         <div className="md:w-[57%]">
           <div className="flex flex-col gap-7">
             <div className="flex items-center justify-between">
@@ -57,8 +58,15 @@ export default function Home() {
                   return (
                     <div key={data.id} className="flex items-center justify-between">
                       <div className="flex items-center lg:gap-4 gap-2">
-                        <div className="h-[30px] w-[30px] rounded-[5px] bg-black"></div>
-                        <div className="xl:text-[16px] lg:text-[12px] md:text-[8px] text-[12px]">{data.name}</div>
+                        <div className="h-[30px] w-[30px] rounded-[5px] bg-black">
+                          <Image
+                            height={30}
+                            width={30}
+                            alt="product"
+                            src={data.img}
+                          />
+                        </div>
+                        <div className="xl:text-[16px] lg:text-[12px] md:text-[9px] text-[12px]">{data.name}</div>
                       </div>
                       <div className="font-bold lg:text-[12px] md:text-[10px] text-[12px]">${data.price}</div>
                     </div>                
@@ -71,9 +79,9 @@ export default function Home() {
       </div>
 
 
-      <div className="md:flex justify-between gap-4">
+      <div className="md:flex justify-between gap-4 h-full">
         <div className="md:w-[57%] md:flex gap-3">
-          <div className="flex-1">
+          <div className="flex-1 md:mb-0 mb-7 h-full">
             <ActiveUsers />
             <ProgressChart />
           </div>
@@ -89,8 +97,7 @@ export default function Home() {
       {/* RECENT ORDERS */}
 
 
-
-      <div className="md:flex justify-between gap-4 mt-5">
+      <div className="md:flex justify-between gap-4 mt-7">
         <div className="md:w-[57%] bg-white p-4">
           <div className="flex flex-col xl:gap-8 lg:gap-5 md:gap-3 gap-4 h-full">
             <div className="font-bold lg:text-[20px] md:text-[14px]">Recent Orders</div>
@@ -102,19 +109,7 @@ export default function Home() {
           <div className="flex flex-col xl:gap-8 lg:gap-5 md:gap-3 gap-4 h-full">
             <div className="font-bold lg:text-[20px] md:text-[14px]">City Orders Statistics</div>
             <div className="flex flex-col md:justify-between md:gap-0 gap-[15px] flex-1">
-              {
-                Datas.map(data => {
-                  return (
-                    <div key={data.id} className="flex items-center justify-between">
-                      <div className="flex items-center lg:gap-4 gap-2">
-                        <div className="h-[30px] w-[30px] rounded-[5px] bg-black"></div>
-                        <div className="xl:text-[16px] lg:text-[12px] md:text-[8px] text-[12px]">{data.name}</div>
-                      </div>
-                      <div className="font-bold lg:text-[12px] md:text-[10px] text-[12px]">${data.price}</div>
-                    </div>                
-                  )
-                })
-              }
+              
             </div>
           </div>
         </div>

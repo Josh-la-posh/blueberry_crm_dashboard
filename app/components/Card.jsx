@@ -8,9 +8,9 @@ function Card({title, price, discount, sign}) {
               {title}
           </div>
           <div className="flex items-center gap-2">
-              <div className="lg:text-[24px] md:text-[14px] sm:text-[16px] text-[12px] font-bold">${price}</div>
-              {sign === '+' && <div className="text-green-500 md:text-[10px] text-[12px]">{sign}{discount}%</div>}
-              {sign === '-' && <div className="text-red-500 md:text-[10px] text-[12px]">{sign}{discount}%</div>}
+              <div className="xl:text-[24px] lg:text-[18px] md:text-[12px] sm:text-[16px] text-[12px] font-bold">${price}</div>
+              {sign === '+' && <div className="text-green-500 md:text-[8px] text-[12px]">{sign}{discount}%</div>}
+              {sign === '-' && <div className="text-red-500 md:text-[8px] text-[12px]">{sign}{discount}%</div>}
           </div>
       </div>
     </div>
