@@ -26,9 +26,9 @@ export default function Home() {
           Overview
         </div>
         <div className="flex items-center justify-between gap-3">
-          <Date children={'22 Jun 2020'}/>
+          <Date>{'22 Jun 2020'}</Date>
           <div className="text-[#454545]">-</div>
-          <Date children={'22 Jun 2020'}/>
+          <Date>{'23 Jun 2020'}</Date>
         </div>
       </div>
 
