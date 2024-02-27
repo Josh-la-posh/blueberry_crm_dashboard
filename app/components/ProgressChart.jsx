@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import dynamic from 'next/dynamic';
 
 const ReactApexChart = dynamic(() => import("react-apexcharts"), {ssr: false});
 

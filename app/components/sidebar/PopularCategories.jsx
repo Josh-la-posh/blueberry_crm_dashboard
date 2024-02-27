@@ -1,11 +1,10 @@
 'use client';
 
 import React, { useState } from 'react';
+import dynamic from 'next/dynamic';
 const Chart = dynamic(() => import("react-apexcharts"), {ssr: false});
 
 function PopularCategories() {
-
-    // const [option, setOption] = useState({});
     const [series, setSeries] = useState([60, 28, 28, 13]);
 
     const option = {
@@ -20,7 +19,7 @@ function PopularCategories() {
   return (
     <div>
 
-        <div className="flex flex-col xl:gap-8 lg:gap-5 md:gap-3 gap-4 h-full">
+        <div className="flex flex-col xl:gap-8 md:gap-12 gap-4 h-full">
             <div className="font-bold lg:text-[20px] md:text-[14px]">Popular Categories</div>
 
             {/* Donut Chart */}
@@ -58,7 +57,7 @@ function PopularCategories() {
                 <div className="flex items-center justify-center md:gap-3 gap-5 flex-1">
                     <div className="flex items-center md:gap-1 gap-2">
                         <div className="h-[10px] w-[10px] rounded-[5px] bg-yellow-400"></div>
-                        <div className='text-[14px] lg:text-[14px] md:text-[8px] '>T-shirt</div>
+                        <div className='text-[#808080] text-[14px] lg:text-[14px] md:text-[8px] '>T-shirt</div>
                     </div>
                     <div className='font-semibold text-[14px] xl:text-[16px] lg:text-[14px] md:text-[8px]'>$28k</div>
                 </div>
