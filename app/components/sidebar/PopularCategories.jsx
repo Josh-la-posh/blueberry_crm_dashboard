@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import Chart from 'react-apexcharts';
+const Chart = dynamic(() => import("react-apexcharts"), {ssr: false});
 
 function PopularCategories() {
 

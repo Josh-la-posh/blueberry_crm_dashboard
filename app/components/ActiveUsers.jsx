@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react'
-import ReactApexChart from 'react-apexcharts';
+const ReactApexChart = dynamic(() => import("react-apexcharts"), {ssr: false});
 
 function ActiveUsers() {
 

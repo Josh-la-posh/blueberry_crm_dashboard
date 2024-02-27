@@ -1,7 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
-import ReactApexChart from 'react-apexcharts';
+
+const ReactApexChart = dynamic(() => import("react-apexcharts"), {ssr: false});
 
 function ProgressChart() {
     const [series, setSeries] = useState([62]);

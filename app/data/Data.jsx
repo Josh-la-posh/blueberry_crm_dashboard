@@ -32,7 +32,7 @@ export const Datas = [
         img: '',
         name: 'Soffe Men\'s 3 Pack - USA Poly',
         price: '556',
-        img:'/images/img_1'
+        img:'/images/img_1.jpeg'
     },
     {
         id: 6,
