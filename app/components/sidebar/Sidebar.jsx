@@ -19,7 +19,11 @@ function Sidebar() {
     >
         {/* Logo */}
 
-        <h1 className='font-bold text-[#0F52BA] px-4'>
+        <h1 className='font-bold text-center text-[#0F52BA] px-4 block sm:hidden'>
+            B <span className='text-white'>C</span>
+        </h1>
+
+        <h1 className='font-bold text-[#0F52BA] px-4 hidden sm:block'>
             Blueberry <span className='text-white'>CRM</span>
         </h1>
         
@@ -30,54 +34,54 @@ function Sidebar() {
                 <AiOutlineHome size={18} fill='white'/>
             </div>
             <div className="flex items-center justify-between flex-1">
-                <div className="text-white font-semibold text-[12px]">Dashboard</div>
+                <div className="text-white font-semibold text-[12px] hidden sm:block">Dashboard</div>
                 <div className="text-white rounded-full bg-[#007FFF] md:px-3 px-2 md:text-[10px] text-[8px]">6</div>
             </div>
         </div>
         <div className='mb-[30px] lg:px-6 md:px-4 px-3'>
-            <div className='mb-[10px] text-[#4682B4] font-semibold text-[12px]'>MANAGEMENT</div>
+            <div className='mb-[10px] text-[#4682B4] font-semibold sm:text-[12px] text-[8px]'>MANAGEMENT</div>
             <div className="flex flex-col gap-2">
                 <div className="flex items-center gap-3 cursor-pointer hover:bg-[#1034A6] py-1 px-2 transition"> 
                     <GrAnalytics size={14} color='#4682B4'/>
                     <div className="flex items-center justify-between flex-1">
-                        <div className='text-[#B7CEEB] text-[12px]'>Analytics</div>
+                        <div className='text-[#B7CEEB] text-[12px] hidden sm:block'>Analytics</div>
                         <MdKeyboardArrowLeft size={16} color='#4682B4'/>
                     </div>
                 </div>
                 <div className="flex items-center gap-3 cursor-pointer hover:bg-[#1034A6] py-1 px-2 transition">
                     <FaUserFriends size={14} color='#4682B4' />
-                    <div className='text-[#B7CEEB] text-[12px]'>Customers</div>
+                    <div className='text-[#B7CEEB] text-[12px] hidden sm:block'>Customers</div>
                 </div>
                 <div className="flex items-center gap-3 cursor-pointer hover:bg-[#1034A6] py-1 px-2 transition">
                     <FiShoppingCart size={14} color='#4682B4' />
-                    <div className='text-[#B7CEEB] text-[12px]'>Orders</div>
+                    <div className='text-[#B7CEEB] text-[12px] hidden sm:block'>Orders</div>
                 </div>
                 <div className="flex items-center gap-3 cursor-pointer hover:bg-[#1034A6] py-1 px-2 transition">
                     <FiTag size={14} color='#4682B4'/>
-                    <div className='text-[#B7CEEB] text-[12px]'>Products</div>
+                    <div className='text-[#B7CEEB] text-[12px] hidden sm:block'>Products</div>
                 </div>
                 <div className="flex items-center gap-3 cursor-pointer hover:bg-[#1034A6] py-1 px-2 transition">
                     <IoReceiptSharp size={14} color='#4682B4'/>
-                    <div className='text-[#B7CEEB] text-[12px]'>Invoices</div>
+                    <div className='text-[#B7CEEB] text-[12px] hidden sm:block'>Invoices</div>
                 </div>
 
             </div>
         </div>
 
         <div className='mb-[30px] lg:px-6 md:px-4 px-3'>
-            <div className='mb-[10px] text-[#4682B4] font-semibold text-[12px]'>PAGES</div>
+            <div className='mb-[10px] text-[#4682B4] font-semibold sm:text-[12px] text-[8px]'>PAGES</div>
             <div className="flex flex-col gap-2">
                 <div className="flex items-center gap-3 cursor-pointer hover:bg-[#1034A6] py-1 px-2 transition"> 
                     <BiLock size={14} color='#4682B4'/>
                     <div className="flex items-center justify-between flex-1">
-                        <div className='text-[#B7CEEB] text-[12px]'>Authentication</div>
+                        <div className='text-[#B7CEEB] text-[12px] hidden sm:block'>Authentication</div>
                         <MdKeyboardArrowLeft size={16} color='#4682B4'/>
                     </div>
                 </div>
                 <div className="flex items-center gap-3 cursor-pointer hover:bg-[#1034A6] py-1 px-2 transition">
                     <BsCalendar4Range size={14} color='#4682B4' /> 
                     <div className="flex items-center justify-between flex-1">
-                        <div className='text-[#B7CEEB] text-[12px]'>Calendar</div>
+                        <div className='text-[#B7CEEB] text-[12px] hidden sm:block'>Calendar</div>
                         <div className="text-white rounded-full bg-[green] md:px-3 px-2 md:text-[10px] text-[8px]">new</div>
                     </div>
                 </div>
@@ -86,16 +90,16 @@ function Sidebar() {
         </div>
 
         <div className='mb-[30px] lg:px-6 md:px-4 px-3'>
-        <div className='mb-[10px] text-[#4682B4] font-semibold text-[12px]'>COMPONENTS</div>
+        <div className='mb-[10px] text-[#4682B4] font-semibold sm:text-[12px] text-[8px]'>COMPONENTS</div>
             <div className="flex flex-col gap-2">
                 <div className="flex items-center gap-3 cursor-pointer hover:bg-[#1034A6] py-1 px-2 transition"> 
                     <FiBarChart size={14} color='#4682B4' />
-                    <div className='text-[#B7CEEB] text-[12px]'>Charts</div>
+                    <div className='text-[#B7CEEB] text-[12px] hidden sm:block'>Charts</div>
                 </div>
                 <div className="flex items-center gap-3 cursor-pointer hover:bg-[#1034A6] py-1 px-2 transition">
                     <FiBox size={14} color='#4682B4' />
                     <div className="flex items-center justify-between flex-1">
-                        <div className='text-[#B7CEEB] text-[12px]'>UI Elements</div>
+                        <div className='text-[#B7CEEB] text-[12px] hidden sm:block'>UI Elements</div>
                     </div>
                 </div>
 

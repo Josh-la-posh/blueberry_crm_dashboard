@@ -10,6 +10,9 @@ function LineChart() {
           chart: {
             type: "area",
             height: "auto",
+            zoom: {
+              enabled: false
+            }
           },
           dropShadow: {
             enable: false,
@@ -19,6 +22,12 @@ function LineChart() {
             blur: 3,
             color: "#000",
             opacity: 0.35,
+          },
+          legend: {
+            show: false
+          },
+          dataLabels: {
+            enabled:false
           },
           fill: {
             colors: ["#fff"],
@@ -52,11 +61,11 @@ function LineChart() {
             <div className="flex gap-3">
                 <div className='flex items-center md:gap-2 gap-1'>
                     <div className='h-[10px] w-[10px] bg-[#6BCAE2]'></div>
-                    <div className='md:text-[14px] text-[10px]'>Incomes</div>
+                    <div className='lg:text-[14px] md:text-[12px] text-[10px]'>Incomes</div>
                 </div>
                 <div className='flex items-center md:gap-2 gap-1'>
                     <div className='h-[10px] w-[10px] bg-[#545AA7]'></div>
-                    <div className='md:text-[14px] text-[10px]'>Expenses</div>
+                    <div className='lg:text-[14px] md:text-[12px] text-[10px]'>Expenses</div>
                 </div>
             </div>
         </div>

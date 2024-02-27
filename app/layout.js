@@ -17,26 +17,34 @@ export default function RootLayout({ children }) {
         <div
           className="
             flex
+            relative
           "
         >
           <div 
             className="
               xl:w-[15%]
               lg:w-[20%]
-              md:w-[25%]
+              sm:w-[25%]
+              w-[15%]
+              h-full
+              fixed
+              top-0
+              left-0
             "
           >
             <Sidebar />
           </div>
           <div
-            className="flex-1 relative"
+            className="flex-1 relative xl:ml-[15%] lg:ml-[20%] sm:ml-[25%] ml-[15%] overflow-x-hidden"
           >
             <div
-              className="sticky"
+              className="sticky top-0"
             >
               <Navbar />
             </div>
+            <div className="h-full overflow-scroll">
             {children}
+            </div>
           </div>
         </div>
       </body>

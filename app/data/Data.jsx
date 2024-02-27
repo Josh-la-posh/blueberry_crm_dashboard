@@ -47,4 +47,72 @@ export const Datas = [
         name: 'Men\'s 02000 Ultra Cotton',
         price: '282'
     },
+];
+
+
+export const Events = [
+    {
+        id: 1,
+        date: '30 JUN, TUE',
+        title: 'Meeting with partners',
+    },
+    {
+        id: 2,
+        date: '09 JUN, MON',
+        title: '103h Web Conference',
+    },
+    {
+        id: 1,
+        date: '04 JUN, THU',
+        title: 'Lunch with Steve',
+    },
+    {
+        id: 1,
+        date: '07 JUN, WED',
+        title: 'Meeting with partners',
+    },
+    {
+        id: 1,
+        date: '04 JUN, TUE',
+        title: 'Weekly Meeting',
+    },
+];
+
+
+export const RecentOrders = [
+    {
+        id: 1,
+        date: '01 Jun 2020 17:56 AM',
+        name: 'Paula Alen',
+        status: 'Completed',
+        total: '504.88'
+    },
+    {
+        id: 1,
+        date: '01 Jun 2020 16:23 AM',
+        name: 'Kervin Adams',
+        status: 'Completed',
+        total: '233.00'
+    },
+    {
+        id: 1,
+        date: '01 Jun 2020 15:41 AM',
+        name: 'Joyce Murray',
+        status: 'Completed',
+        total: '150.00'
+    },
+    {
+        id: 1,
+        date: '01 Jun 2020 12:35 AM',
+        name: 'Frank Stewart',
+        status: 'Pending',
+        total: '170.25'
+    },
+    {
+        id: 1,
+        date: '01 Jun 2020 07:36 AM',
+        name: 'Albert Critz',
+        status: 'Cancelled',
+        total: '199.99'
+    },
 ]
