@@ -18,7 +18,7 @@ function Tables() {
             {
                 RecentOrders.map(order => {
                     return (
-                        <tbody>
+                        <tbody key={order.id}>
                             <tr key={order.id} className=''>
                                 <td className='xl:text-[14px] md:text-[8px] text-[8px] md:px-0 px-2 md:py-2 py-4'>{order.date}</td>
                                 <td className='xl:text-[14px] md:text-[8px] text-[8px] md:px-1 px-2 py-4 flex items-center gap-2'>

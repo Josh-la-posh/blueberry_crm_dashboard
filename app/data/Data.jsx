@@ -85,27 +85,27 @@ export const Events = [
         title: 'Weekly Meeting',
     },
     {
-        id: 1,
+        id: 6,
         date: '30 JUN, TUE',
         title: 'Meeting with partners',
     },
     {
-        id: 2,
+        id: 7,
         date: '09 JUN, MON',
         title: '103h Web Conference',
     },
     {
-        id: 3,
+        id: 8,
         date: '04 JUN, THU',
         title: 'Lunch with Steve',
     },
     {
-        id: 4,
+        id: 9,
         date: '07 JUN, WED',
         title: 'Meeting with partners',
     },
     {
-        id: 5,
+        id: 10,
         date: '04 JUN, TUE',
         title: 'Weekly Meeting',
     },
