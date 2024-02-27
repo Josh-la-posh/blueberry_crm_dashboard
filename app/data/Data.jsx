@@ -84,6 +84,31 @@ export const Events = [
         date: '04 JUN, TUE',
         title: 'Weekly Meeting',
     },
+    {
+        id: 1,
+        date: '30 JUN, TUE',
+        title: 'Meeting with partners',
+    },
+    {
+        id: 2,
+        date: '09 JUN, MON',
+        title: '103h Web Conference',
+    },
+    {
+        id: 3,
+        date: '04 JUN, THU',
+        title: 'Lunch with Steve',
+    },
+    {
+        id: 4,
+        date: '07 JUN, WED',
+        title: 'Meeting with partners',
+    },
+    {
+        id: 5,
+        date: '04 JUN, TUE',
+        title: 'Weekly Meeting',
+    },
 ];
 
 
