@@ -1,3 +1,5 @@
+'use client';
+
 import Image from "next/image";
 import ActiveUsers from "./components/ActiveUsers";
 import Card from "./components/Card";
