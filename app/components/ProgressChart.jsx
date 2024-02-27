@@ -8,7 +8,6 @@ function ProgressChart() {
     const data = {
         options: {
             chart: {
-              // height: auto,
               type: 'radialBar',
             },
             plotOptions: {

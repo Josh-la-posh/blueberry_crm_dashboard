@@ -79,11 +79,15 @@ export default function Home() {
       </div>
 
 
-      <div className="md:flex justify-between gap-4 h-full">
+      <div className="md:flex justify-between gap-4">
         <div className="md:w-[57%] md:flex gap-3">
-          <div className="flex-1 md:mb-0 mb-7 h-full">
-            <ActiveUsers />
-            <ProgressChart />
+          <div className="flex-1 md:flex flex-col justify-between md:mb-0 mb-7 md:gap-3 h-full">
+            <div className="flex-1 md:mb-0 mb-7 md:h-[65%] bg-white">
+              <ActiveUsers />
+            </div>
+            <div className="">
+              <ProgressChart />
+            </div>
           </div>
           <div className="flex-1">
             <UpcomingEvents />

@@ -6,14 +6,7 @@ import ReactApexChart from 'react-apexcharts';
 function ActiveUsers() {
 
     const series= [{
-        name: 'Net Profit',
-        data: [44, 55, 57]
-      }, {
-        name: 'Revenue',
-        data: [76, 85, 101]
-      }, {
-        name: 'Free Cash Flow',
-        data: [35, 41, 36]
+        data: [44, 55, 57, 28, 42, 54, 78, 42, 59]
       }]
 
      const data = {
@@ -24,13 +17,15 @@ function ActiveUsers() {
             plotOptions: {
               bar: {
                 horizontal: false,
-                columnWidth: '55%',
+                columnWidth: '45%',
+                distributed: true,
                 endingShape: 'rounded'
               },
             },
             dataLabels: {
               enabled: false
             },
+            colors: ['#B6D0E2', '#B6D0E2', '#0096FF', '#0096FF', '#0096FF', '#0096FF', '#0096FF', '#B6D0E2', '#B6D0E2'],
             legend: {
                 show: false
             },
@@ -40,7 +35,7 @@ function ActiveUsers() {
               colors: ['transparent']
             },
             xaxis: {
-              categories: ['22 Jun', '25 Jun', '26 Jun'],
+              categories: ['', '22 Jun', '', '', '25 Jun', '', '', '26 Jun', ''],
             },
             fill: {
               opacity: 1
@@ -49,7 +44,7 @@ function ActiveUsers() {
      }
 
   return (
-    <div className="bg-white flex flex-col xl:gap-8 lg:gap-5 md:gap-3 gap-4 md:mb-4 mb-4 lg:px-4 md:px-2 px-6 lg:py-6 md:py-2 py-4">
+    <div className="bg-white flex flex-col xl:gap-8 lg:gap-5 md:gap-3 gap-4 lg:px-4 md:px-2 px-6 lg:pt-6 md:pt-2 h-[100%]">
         <div className="">
             <div className="flex items-center justify-between font-bold lg:text-[18px] md:text-[13px]">
                 <div>Active Users</div>
@@ -57,8 +52,8 @@ function ActiveUsers() {
             </div>
             <div className='md:text-[8px] text-[10px]'>Page views per day</div>
         </div>
-        <div>
-            <ReactApexChart options={data.options} series={series} type='bar' />
+        <div className=''>
+            <ReactApexChart options={data.options} series={series} type='bar' height={'200%'}/>
         </div>
             
         </div>
